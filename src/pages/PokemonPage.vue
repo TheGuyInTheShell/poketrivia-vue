@@ -35,7 +35,7 @@ async function mixPokemon() {
 }
 
 function checkAnswer(id) {
-  if (secretPokemonId.value === id) {
+  if (secretPokemonId.value === id && !answered.value) {
     points.value += 1
   }
   answered.value = true
